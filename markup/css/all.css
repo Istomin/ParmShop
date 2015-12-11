@@ -94,6 +94,7 @@ form,fieldset {
 }
 .top-nav li {
     font-size: 12px;
+    text-transform: uppercase;
     border-left: 1px solid #000;
 }
 .top-nav li:first-child {
@@ -114,39 +115,108 @@ form,fieldset {
     right: 0;
     background: #ef4a46;
 }
+#header .cart-link {
+    float: right;
+    position: relative;
+    padding: 12px 20px 12px 36px;
+    border-right: 1px solid #000;
+    position: relative;
+}
+#header .cart-link:hover,
+#header .cart-link.active {background: #ef4a46;}
+#header .cart-link:before {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: url(../images/sprite-icons.png) 0 -27px no-repeat;
+    top: 16px;
+    left: 20px;
+}
+#header .cart-link .count {
+    position: absolute;
+    line-height: 18px;
+    text-align: center;
+    background: #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 0 2px;
+    min-width: 18px;
+    top: 7px;
+    left: 27px;
+}
+#header .cart-link .cart-price{
+    padding-left: 30px;
+}
 #header .social-networks {
-    float: left;
-    padding: 12px 15px 15px 0;
+    float: right;
+    padding: 14px 6% 15px 0;
 }
 .social-networks li {
     float: left;
     text-indent: -9999px;
     overflow: hidden;
-    margin-left: 13px;
+    margin-left: 14px;
 }
-.social-networks a{
+.social-networks a {
     display: block;
     height: 19px;
     background: url(../images/sprite-icons.png) -9999px -9999px no-repeat;
 }
-.social-networks .vk a{
-    background-position: 0 -2px;
+.social-networks .vk a {
+    background-position: 0 0;
     width: 12px;
 }
-.social-networks .facebook a{
+.social-networks .facebook a {
     background-position: -26px 0;
     width: 10px;
 }
-.social-networks .instagram a{
-    background-position: -50px -3px;
+.social-networks .instagram a {
+    background-position: -50px 0;
     width: 15px;
 }
-.social-networks .whatsapp a{
-    background-position: -78px -1px;
+.social-networks .whatsapp a {
+    background-position: -78px 1px;
     width: 19px;
 }
-.social-networks .viber a{
-    background-position: -110px -2px;
+.social-networks .viber a {
+    background-position: -110px 0;
     width: 16px;
+}
+#header .phone {
+    float: right;
+    font-size: 14px;
+    padding: 11px 18px 0 0;
+}
+#header .whish-link {
+    float: right;
+    width: 58px;
+    position: relative;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0 2px;
+}
+#header .whish-link:hover {background: #ef4a46;}
+#header .whish-link:before {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 14px;
+    background: url(../images/sprite-icons.png) -24px -28px no-repeat;
+    top: 50%;
+    left: 50%;
+    margin: -7px 0 0 -8px;
+}
+#header .whish-link span {
+    position: absolute;
+    top: 7px;
+    left: 28px;
+    background: #ef4a46;
+    line-height: 18px;
+    padding: 0 3px;
+    text-align: center;
+    min-width: 18px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
 }
 /* header end */
