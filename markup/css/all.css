@@ -1,0 +1,152 @@
+body {
+    color:#555;
+    background: #fff;
+    font: 14px/24px Helvetica, Arial, sans-serif;
+}
+img {
+    border-style:none;
+    vertical-align:top;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    color:#ef4a46;
+    text-decoration: none;
+}
+a:hover {text-decoration: underline;}
+a:hover,
+a:focus {
+    outline: none;
+    color:#ef4a46;
+}
+input,
+textarea,
+select {
+    font:100% Arial, Helvetica, sans-serif;
+    vertical-align:middle;
+    color:#000;
+}
+form,fieldset {
+    margin:0;
+    padding:0;
+    border:none;
+}
+.container-fluid {
+    max-width: 1230px;
+}
+/* header start */
+#header {
+    background: #fff;
+}
+#header .top-row {
+    background: #191919;
+    color: #fff;
+}
+#header a {text-decoration: none;}
+#header .top-row a {
+    color: #fff;
+}
+#header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#header .lang,
+.top-nav a,
+#header .whish-link,
+#header .cart-link {
+    height: 48px;
+}
+
+.lang {
+    float: left;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0 1px;
+    padding: 18px 20px;
+    margin-left: 15px;
+}
+.lang span {
+    display: block;
+    cursor: pointer;
+    text-indent: -9999px;
+    overflow: hidden;
+    position: relative;
+    width: 29px;
+    height: 12px;
+}
+.lang .lang-ru {
+    background: url(../images/ico-flag-ru.png) no-repeat;
+}
+.lang .current:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 4px 3px;
+    top: 4px;
+    right: 0;
+
+}
+.top-nav,
+.top-nav li {
+    float: left;
+}
+.top-nav li {
+    font-size: 12px;
+    border-left: 1px solid #000;
+}
+.top-nav li:first-child {
+    border-left: none;
+}
+.top-nav a {
+    display: block;
+    position: relative;
+    padding: 12px 20px;
+}
+.top-nav a:hover:after, 
+.top-nav .active a:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ef4a46;
+}
+#header .social-networks {
+    float: left;
+    padding: 12px 15px 15px 0;
+}
+.social-networks li {
+    float: left;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin-left: 13px;
+}
+.social-networks a{
+    display: block;
+    height: 19px;
+    background: url(../images/sprite-icons.png) -9999px -9999px no-repeat;
+}
+.social-networks .vk a{
+    background-position: 0 -2px;
+    width: 12px;
+}
+.social-networks .facebook a{
+    background-position: -26px 0;
+    width: 10px;
+}
+.social-networks .instagram a{
+    background-position: -50px -3px;
+    width: 15px;
+}
+.social-networks .whatsapp a{
+    background-position: -78px -1px;
+    width: 19px;
+}
+.social-networks .viber a{
+    background-position: -110px -2px;
+    width: 16px;
+}
+/* header end */
