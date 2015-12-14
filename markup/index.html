@@ -1,71 +1,331 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Parm Shop</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/all.css" media="all"/>
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.main.js"></script>
+	<meta charset="UTF-8">
+	<title>Parm</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/non-responsive.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link media="all" rel="stylesheet" href="css/jcf.css" />
 </head>
 <body>
-    <div class="page">
-        <header id="header">
-            <div class="header-holder">
-                <div class="top-row">
-                    <div class="container-fluid">
-                        <div class="col-md-6 clearfix">
-                            <div class="lang">
-                                <span class="current lang-ru">Rus</span>
-                                <!-- <ul>
-                                    <li><a href="#">Rus</a></li>
-                                    <li><a href="#">Rus</a></li>
-                                </ul> -->
-                            </div>
-                            <ul class="top-nav">
-                                <li class="active"><a href="#">Контакты</a></li>
-                                <li><a href="#">Доставка и оплата</a></li>
-                                <li><a href="#">Клиентам</a></li>
-                                <li><a href="#">Партнеры</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 clearfix">
-                            <a href="#" class="cart-link active">
-                                <span class="count">2</span>
-                                <span class="cart-price">9 000 р.</span>
-                            </a>
-                            <a href="#" class="whish-link"><span>3</span></a>
-                            <span class="phone">+7 342 890-76-00</span>
-                            <ul class="social-networks">
-                                <li class="vk"><a href="#">vk</a></li>
-                                <li class="facebook"><a href="#">facebook</a></li>
-                                <li class="instagram"><a href="#">instagram</a></li>
-                                <li class="whatsapp"><a href="#">whatsapp</a></li>
-                                <li class="viber"><a href="#">viber</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <section class="nav-area">
-                    <strong class="logo"><a href="#">PARM crafted in parma workshop</a></strong>
-                    <!-- <a href="#" class="menu-opener"><span>open menu</span></a> -->
-                    <nav id="nav">
-                        <ul>
-                            <li><a href="#">Рюкзаки</a></li>
-                            <li><a href="#">Сумки</a></li>
-                            <li><a href="#">Аксессуары</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">Под заказ</a></li>
-                            <li><a href="#">Look Book</a></li>
-                            <li><a href="#">о Компании</a></li>
-                        </ul>
-                    </nav>
-                </section>
-            </div>
-        </header>
-    </div>
+	<div id="wrapper">
+		<header id="header">
+			<div class="panel">
+				<div class="panel-holder">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<form class="lang" action="#">
+									<select>
+										<option data-image="images/lang-rus.png" value="v4">&nbsp;</option>
+										<option data-image="images/lang-rus.png" value="v4">&nbsp;</option>
+									</select>
+								</form>
+								<ul class="nav-bar">
+									<li><a href="#">Контакты</a></li>
+									<li><a href="#">Доставка и оплата</a></li>
+									<li><a href="#">Клиентам</a></li>
+									<li><a href="#">Партнеры</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<ul class="social">
+									<li><div><a href="#"><img src="images/ico-vk.png" alt="image"></a></div></li>
+									<li><div><a href="#"><img src="images/ico-fb.png" alt="image"></a></div></li>
+									<li><div><a href="#"><img src="images/ico-ig.png" alt="image"></a></div></li>
+									<li><div><a href="#"><img src="images/ico-ws.png" alt="image"></a></div></li>
+									<li><div><a href="#"><img src="images/ico-sk.png" alt="image"></a></div></li>
+								</ul>
+							</div>
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<strong class="phone">+7 342 890-76-00</strong>
+							</div>
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<strong class="like"><span>3</span></strong>
+								<div class="basket">
+									<strong>2</strong>
+									<span>9 000 р.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="area">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+							<ul class="nav-list">
+								<li><a href="#">Рюкзаки</a></li>
+								<li><a href="#">Сумки</a></li>
+								<li class="active"><a href="#">Аксессуары</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<a href="#" class="logo">Parm</a>
+						</div>
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+							<ul class="nav-list sub-nav-list">
+								<li><a href="#">Под заказ</a></li>
+								<li><a href="#">Look Book</a></li>
+								<li><a href="#">о Компании</a></li>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="main">
+			<div class="promo">
+				<div class="slideshow">
+					<div class="slideset">
+						<div class="slide">
+							<div class="slidebox">
+								<img src="images/img-1.jpg" alt="image">
+								<div>
+									<strong>Look Book<br>осень/зима</strong>
+									<a href="#">Купить сейчас</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slidebox">
+								<img src="images/img-2.jpg" alt="image">
+								<div>
+									<strong>Look Book<br>осень /зима</strong>
+									<a href="#">Купить сейчас</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="btn-prev" href="#">Previous</a>
+					<a class="btn-next" href="#">Next</a>
+				</div>
+				<div class="video">
+					<img src="images/video-1.jpg" alt="video">
+				</div>
+			</div>
+			<div class="present">
+				<h1><span>Рюкзаки</span></h1>
+				<div class="container">
+					<div class="row">
+						<ul class="present-nav">
+							<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="present-box">
+									<div class="present-image">
+										<div><img src="images/img-3.jpg" alt="image"></div>
+									</div>
+									<strong>Backpack in cotton canvas<br>with leather details</strong>
+									<em>4 500 <i class="rub">P.</i></em>
+									<a href="#" class="btn-basket">Добавить в корзину</a>
+								</div>
+							</li>
+							<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="present-box">
+									<div class="present-image">
+										<div><img src="images/img-4.jpg" alt="image"></div>
+									</div>
+									<strong>Backpack in Cordura® <br>with leather details</strong>
+									<em>5 990 <i class="rub">P.</i></em>
+									<a href="#" class="btn-basket">Добавить в корзину</a>
+								</div>
+							</li>
+							<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="present-box">
+									<span class="action-1">NEW</span>
+									<div class="present-image">
+										<div><img src="images/img-5.jpg" alt="image"></div>
+									</div>
+									<strong>Simple backpack in cotton<br>canvas with leather details</strong>
+									<em>7 500 <i class="rub">P.</i></em>
+									<a href="#" class="btn-basket">Добавить в корзину</a>
+								</div>
+							</li>
+							<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="present-box">
+									<div class="present-image">
+										<div><img src="images/img-6.jpg" alt="image"></div>
+									</div>
+									<strong>Backpack in polycotton<br>with leather details</strong>
+									<em>4 990 <i class="rub">P.</i></em>
+									<a href="#" class="btn-basket">Добавить в корзину</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<a href="#" class="btn-more">Посмотреть все</a>
+			</div>
+			<div class="present">
+				<h2><span>Сумки</span></h2>
+				<div class="container">
+					<div class="row">
+						<ul class="present-nav">
+							<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="present-box">
+									<div class="present-image">
+										<div><img src="images/img-7.jpg" alt="image"></div>
+									</div>
+									<strong>Messenger bag in Cordura®<br>with leather details</strong>
+									<em>3 990 <i class="rub">P.</i></em>
+									<a href="#" class="btn-basket">Добавить в корзину</a>
+								</div>
+							</li>
+							<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="present-box">
+									<span class="action-2">Sale</span>
+									<div class="present-image">
+										<div><img src="images/img-8.jpg" alt="image"></div>
+									</div>
+									<strong>Weekend bag in leather</strong>
+									<em class="lt">12 900 <i class="rub">P.</i></em>
+									<em class="color">10 990 <i class="rub">P.</i></em>
+									<a href="#" class="btn-basket">Добавить в корзину</a>
+								</div>
+							</li>
+							<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="present-box">
+									<div class="present-image">
+										<div><img src="images/img-9.jpg" alt="image"></div>
+									</div>
+									<strong>Reporter's bag in Cordura®<br>with leather details</strong>
+									<em>4 500 <i class="rub">P.</i></em>
+									<a href="#" class="btn-basket">Добавить в корзину</a>
+								</div>
+							</li>
+							<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="present-box">
+									<div class="present-image">
+										<div><img src="images/img-10.jpg" alt="image"></div>
+									</div>
+									<strong>Saddle bag in leather</strong>
+									<em>8 990 <i class="rub">P.</i></em>
+									<a href="#" class="btn-basket">Добавить в корзину</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="btn-more">Посмотреть все</a>
+				</div>
+			</div>
+			<div class="present sub-present">
+				<h2><span>Аксессуары</span></h2>
+				<div class="container">
+					<div class="row">
+						<ul class="present-nav">
+							<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="present-box">
+									<div class="present-image">
+										<div><img src="images/img-11.jpg" alt="image"></div>
+									</div>
+									<strong>Large wash bag in cotton<br>canvas and leather</strong>
+									<em>2 990 <i class="rub">P.</i></em>
+									<a href="#" class="btn-basket">Добавить в корзину</a>
+								</div>
+							</li>
+							<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="present-box">
+									<div class="present-image">
+										<div><img src="images/img-12.jpg" alt="image"></div>
+									</div>
+									<strong>Leather wallet with zipper<br>closure</strong>
+									<em>4 990 <i class="rub">P.</i></em>
+									<a href="#" class="btn-basket">Добавить в корзину</a>
+								</div>
+							</li>
+							<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="present-box">
+									<div class="present-image">
+										<div><img src="images/img-13.jpg" alt="image"></div>
+									</div>
+									<strong>Wash bag in waxed cotton<br>canvas and Cordura®<br>with leather details</strong>
+									<em>5 500 <i class="rub">P.</i></em>
+									<a href="#" class="btn-basket">Добавить в корзину</a>
+								</div>
+							</li>
+							<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="present-box">
+									<span class="action-3">TOP</span>
+									<div class="present-image">
+										<div><img src="images/img-14.jpg" alt="image"></div>
+									</div>
+									<strong>Slim wallet in leather</strong>
+									<em>3 990 <i class="rub">P.</i></em>
+									<a href="#" class="btn-basket">Добавить в корзину</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<ul class="navigation">
+							<li><a href="#">Рюкзаки</a></li>
+							<li><a href="#">Сумки</a></li>
+							<li><a href="#">Аксессуары</a></li>
+							<li><a href="#">Под заказ</a></li>
+							<li><a href="#">Look Book</a></li>
+							<li><a href="#">О компании</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<ul class="footer-nav">
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Клиентам</a></li>
+							<li><a href="#">Партнеры</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<strong>Мы принимаем к оплате</strong>
+							<ul>
+								<li><div><div><a href="#"><img src="images/ico-1.png" alt="ico"></a></div></div></li>
+								<li><div><div><a href="#"><img src="images/ico-2.png" alt="ico"></a></div></div></li>
+								<li><div><div><a href="#"><img src="images/ico-3.png" alt="ico"></a></div></div></li>
+								<li><div><div><a href="#"><img src="images/ico-4.png" alt="ico"></a></div></div></li>
+								<li><div><div><a href="#"><img src="images/ico-5.png" alt="ico"></a></div></div></li>
+								<li><div><div><a href="#"><img src="images/ico-6.png" alt="ico"></a></div></div></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="holder">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+							<span class="copy">&copy; 2015 ParmWorkShop</span>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<ul class="social">
+								<li><div><a href="#"><img src="images/ico-vk2.png" alt="image"></a></div></li>
+								<li><div><a href="#"><img src="images/ico-fb2.png" alt="image"></a></div></li>
+								<li><div><a href="#"><img src="images/ico-ig2.png" alt="image"></a></div></li>
+								<li><div><a href="#"><img src="images/ico-ws2.png" alt="image"></a></div></li>
+								<li><div><a href="#"><img src="images/ico-sk2.png" alt="image"></a></div></li>
+							</ul>
+						</div>
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+							<span class="by"><a href="#">cinergy org</a> Разработка сайта</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
 </body>
 </html>
