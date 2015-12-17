@@ -29,19 +29,7 @@
     font-style: normal;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, em, img, strong, b, u, i, ul, li, fieldset, form, label, footer, header, section{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -50,21 +38,9 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
+footer, header, section {display: block;}
 ol, ul {list-style: none;}
-blockquote, q{quotes: none;}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	 border-collapse: collapse;
-	border-spacing: 0;
-}
 /* Common site styles */
 body {
 	color:#555;
@@ -572,6 +548,7 @@ h6{
 	color:#1f1b20;
 	position:relative;
 }
+.catalog-holder .present-nav li{height:auto;}
 .present-nav li:hover{z-index:4;}
 .present-box{
 	position:relative;
@@ -652,12 +629,6 @@ h6{
 	line-height:24px;
 	font-family: 'intro_bookregular';
 	color:#fff;
-}
-.catalog .action-1, 
-.catalog .action-2, 
-.catalog .action-3{
-	top:23px;
-	left:15px;
 }
 .action-2{background:#ef4a46;}
 .action-3{background:#248dc1;}
@@ -1336,16 +1307,12 @@ h6{
 	clear:both;
 	content:"";
 }
-.catalog-nav li{
-	display:inline-block;
-	vertical-align:top;
-	margin:0 0 40px;
-	padding:33px 10px 10px;
+.catalog-nav li p{
 	font-size:12px;
 	line-height:14px;
 	font-family: 'intro_regularregular';
 	color:#555;
-	position:relative;
+	text-transform:none;
 }
 .catalog-box{
 	position:relative;
@@ -1402,7 +1369,7 @@ h6{
 	text-decoration:line-through;
 }
 .catalog-nav em.color{color:#ef4a46;}
-.catalog-nav p{margin:0 0 17px;}
+.present-nav p{margin:0 0 17px;}
 .catalog-nav .fa-rub{font-size:16px;}
 .more{
 	display:inline-block;
