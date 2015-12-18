@@ -44,7 +44,7 @@ ol, ul {list-style: none;}
 /* Common site styles */
 body {
 	color:#555;
-	font:14px/24px 'Conv_Intro-Regular', Arial, Helvetica, sans-serif;
+	font:14px/24px 'intro_regularregular', Arial, Helvetica, sans-serif;
 	background:#fff;
 	-webkit-text-size-adjust:100%;
 	-ms-text-size-adjust: none;
@@ -70,31 +70,37 @@ textarea:focus{outline:none !important;}
 	max-width: none !important;
 }
 h1{
+	margin:0 0 16px;
 	font-size:36px;
 	line-height:38px;
 	color:#111;
 }
 h2{
+	margin:0 0 16px;
 	font-size:24px;
 	line-height:26px;
 	color:#111;
 }
 h3{
+	margin:0 0 16px;
 	font-size:18px;
 	line-height:20px;
 	color:#111;
 }
 h4{
+	margin:0 0 16px;
 	font-size:16px;
 	line-height:18px;
 	color:#111;
 }
 h5{
+	margin:0 0 16px;
 	font-size:14px;
 	line-height:16px;
 	color:#111;
 }
 h6{
+	margin:0 0 16px;
 	font-size:12px;
 	line-height:14px;
 	color:#111;
@@ -504,8 +510,6 @@ h6{
 .present h1, 
 .present h2{
 	margin:0 0 22px;
-	font-size:36px;
-	line-height:38px;
 	font-family: 'intro_bookregular';
 	text-transform:uppercase;
 	color:#111;
@@ -540,23 +544,23 @@ h6{
 	display:inline-block;
 	vertical-align:top;
 	margin:0 0 20px;
-	height:490px;
 	font-size:14px;
 	line-height:24px;
 	font-family: 'intro_bookregular';
 	text-transform:uppercase;
 	color:#1f1b20;
 	position:relative;
+	height:490px;
 }
 .catalog-holder .present-nav li{height:auto;}
-.present-nav li:hover{z-index:4;}
+
 .present-box{
-	position:relative;
 	padding:30px 0;
 	border:3px solid #fff;
 	border-color:transparent;
 	width:270px;
 	overflow:hidden;
+	min-height:490px;
 }
 .present-image{
 	margin:0 0 51px;
@@ -821,9 +825,7 @@ h6{
 	background:url(../images/bg-sub-present.jpg) no-repeat 50% 100%;
 	padding:1px 0 98px;
 	overflow:hidden;
-	font-size:14px;
-	line-height:24px;
-	font-family: 'intro_bookregular';
+	font:14px/24px 'intro_bookregular', Arial, Helvetica, sans-serif;
 	color:#555;
 }
 .about:after{
@@ -833,8 +835,6 @@ h6{
 }
 .about h1{
 	margin:0 0 19px;
-	font-size:36px;
-	line-height:38px;
 	color:#1f1b20;
 	text-align:center;
 }
@@ -1127,7 +1127,6 @@ h6{
 }
 .product-info h1{
 	margin:0 0 11px;
-	font-size:36px;
 	line-height:48px;
 	font-family: 'intro_bookregular';
 	color:#1f1b20;
@@ -1275,8 +1274,6 @@ h6{
 .catalog h1, 
 .catalog h2{
 	margin:0 0 22px;
-	font-size:36px;
-	line-height:38px;
 	font-family: 'intro_bookregular';
 	text-transform:uppercase;
 	color:#111;
@@ -1399,8 +1396,6 @@ h6{
 }
 .partners h1{
 	margin:0 0 19px;
-	font-size:36px;
-	line-height:38px;
 	text-transform:uppercase;
 	font-family: 'intro_bookregular';
 	color:#1f1b20;
