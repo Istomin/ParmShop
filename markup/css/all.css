@@ -783,6 +783,8 @@ h6{
 	line-height:26px;
 }
 .paging li:last-child{margin:0 0 0 57px;}
+.paging li:first-child{margin:0 57px 0 0;}
+.paging li.active a{cursor:default;}
 .paging a{
 	float:left;
 	padding:0 4px;
@@ -1844,23 +1846,23 @@ h6{
 
 #header.fixed-position{
 	position:fixed;
-	padding:0 0 10px;
+	padding:0 0 5px;
 	top:0;
 	left:0;
 	width:100%;
-	z-index: 99999;
+	z-index: 999;
 	border-bottom: 1px solid #ccc;
 	background:#fff;
-	height:150px;
+	height:110px;
 }
+#header.fixed-position .panel{margin:0;}
 #header.fixed-position .logo img{
 	margin:0 auto;
 	transform:scale(0.915, 0.915);
-	height:70px;
+	height:60px;
 
 }
-#header.fixed-position .panel{margin:0 0 19px;}
-#header.fixed-position .nav-list {margin: 27px 0 0;}
+#header.fixed-position .nav-list {margin: 17px 0 0;}
 .item-1{
 	background:url(../images/sprite.png) no-repeat -173px 0;
 	height:16px;
@@ -2045,9 +2047,11 @@ body > .jcf-select-drop {
 	margin: -1px 0 0;
 	z-index: 9999;
 }
+body > .jcf-select-select-lang .jcf-select-drop{width:52px;}
 body > .jcf-select-drop.jcf-drop-flipped {
 	margin: 1px 0 0;
 }
+
 .jcf-select .jcf-select-drop {
 	position: absolute;
 	margin-top: 0px;
@@ -2061,8 +2065,9 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	top: auto;
 }
 .jcf-select-drop .jcf-select-drop-content {
-	border: 1px solid #f00;
+	border: 1px solid #111;
 }
+.jcf-select-select-lang .jcf-select-drop .jcf-select-drop-content {width:50px !important;}
 /* multiple select styles */
 .jcf-list-box {
 	overflow: hidden;
@@ -2071,6 +2076,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	min-width: 200px;
 	margin: 0 15px;
 }
+
 /* select options styles */
 .jcf-list {
 	display: inline-block;
@@ -2081,12 +2087,15 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	font-size: 12px;
 	width: 100%;
 }
+.jcf-select-select-lang .jcf-select-drop-content{width:50px !important;}
+.jcf-select-select-lang. jcf-list{width:50px !important;}
 .jcf-list .jcf-list-content {
 	vertical-align: top;
 	display: inline-block;
 	overflow: auto;
 	width: 100%;
 }
+.jcf-select-select-lang .jcf-list .jcf-list-content{width:48px !important;}
 .jcf-list ul {
 	list-style: none;
 	padding: 0;
@@ -2104,10 +2113,13 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	overflow: hidden;
 	cursor: pointer;
 	display: block;
-	padding: 3px 2px;
+	padding: 0 20px;
 	color: #555;
 	height: 1%;
 	cursor:pointer;
+	color: #555;
+	font: italic 12px/40px Georgia,"Times New Roman",Times,serif;
+	text-transform:uppercase;
 }
 .basket-box .jcf-list .jcf-option{padding:10px 20px;}
 .jcf-list .jcf-disabled {
