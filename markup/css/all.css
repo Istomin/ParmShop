@@ -117,7 +117,7 @@ h6{
 	left:0;
 	top:0;
 	right:0;
-	z-index:9999;
+	z-index:999;
 	height:215px;
 }
 .panel{
@@ -334,12 +334,12 @@ h6{
 	margin:0 auto;
 	height:128px;
 	width:128px;
+	-webkit-transition:all 0.4s linear;
+	transition:all 0.4s linear;
 }
 .logo img{
 	display:block;
 	margin:0 auto;
-	-webkit-transition:all 0.4s linear;
-	transition:all 0.4s linear;
 }
 #main{
 	margin:0 auto 44px;
@@ -751,6 +751,11 @@ h6{
 	line-height:32px;
 	color:#111;
 }
+.look-book h2 a{
+	text-decoration:none;
+	color:#111;
+}
+.look-book h2 a:hover{text-decoration:underline;}
 .look-book p{margin:0 0 22px;}
 .images{
 	margin:0 0 30px -30px;
@@ -1857,12 +1862,15 @@ h6{
 }
 #header.fixed-position .panel{margin:0;}
 #header.fixed-position .logo img{
-	margin:0 auto;
-	transform:scale(0.915, 0.915);
-	height:60px;
+	margin:4px auto 0;
+	height:52px;
 
 }
-#header.fixed-position .nav-list {margin: 17px 0 0;}
+#header.fixed-position .nav-list {margin:0;}
+#header.fixed-position .nav-list li{padding:0; line-height:60px;}
+#header.fixed-position .nav-list li.active, 
+#header.fixed-position .nav-list li:hover{background:none;}
+#header.fixed-position .nav-list li:after{display:none;}
 .item-1{
 	background:url(../images/sprite.png) no-repeat -173px 0;
 	height:16px;
@@ -1982,12 +1990,6 @@ h6{
 	width:16px;
 }
 
-
-
-
-
-
-
 /* custom select styles */
 .jcf-select {
 	display:inline-block;
@@ -1997,7 +1999,7 @@ h6{
 	background:none;
 	margin:0;
 	min-width:29px;
-	height:11px;
+	height:20px;
 	cursor:pointer;
 }
 .basket-box .jcf-select{
@@ -2113,13 +2115,14 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	overflow: hidden;
 	cursor: pointer;
 	display: block;
-	padding: 0 20px;
+	padding: 0 10px;
 	color: #555;
 	height: 1%;
 	cursor:pointer;
 	color: #555;
 	font: italic 12px/40px Georgia,"Times New Roman",Times,serif;
 	text-transform:uppercase;
+    text-align: center;
 }
 .basket-box .jcf-list .jcf-option{padding:10px 20px;}
 .jcf-list .jcf-disabled {
