@@ -2492,3 +2492,71 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	}
 }
 
+
+
+
+
+
+.panel,
+.panel-holder {
+    overflow: visible;
+}
+.panel:after,
+.panel-holder:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+.language {    margin:0 20px 0 -15px;    padding:0;    list-style:none;
+    float:left;	border:solid #000;
+	border-width:0 1px;
+	width:71px;
+}
+.language > li{
+    position:relative;
+    height: 48px;
+    text-align: center;
+}
+.language > li > a{
+	height:48px;
+    padding:18px 0 0;
+    display:block;
+}
+.language > li > a:after {
+    content:"";
+    display:inline-block;
+    vertical-align:top;
+    border-width:3px;    border-style:solid outset outset;    border-color:#fff transparent transparent;
+    margin: 4px -1px 0 10px;
+}
+.language img {
+    vertical-align:top;
+}
+.language ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+    position:absolute;
+    top:100%;
+    left: -1px;
+    right:-1px;
+    background:#f5f5f5;
+    border:1px solid #111;
+    border-top:none;
+    z-index:999;
+    display:none;
+}
+.language li:hover ul{display:block;}
+.language ul li{
+    border-top:1px solid #111;
+}
+.language ul li:first-child{    border:none;}
+.language ul a{
+    display:block;
+    font-size:0;
+    line-height:0;
+    padding:9px;
+}
+.language ul a:hover{
+    background:#e9e9e9;
+}

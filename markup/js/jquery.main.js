@@ -1,7 +1,7 @@
 // page init
 jQuery(function(){
 	initTabs();
-	initCustomForms();
+	//initCustomForms();
 	initSlideShow();
 	initLightbox();
 	initPopups();
